@@ -1,0 +1,35 @@
+Brian Eduardo Segura Lozano
+
+Comando git log
+El comando que podemos usar para ver el histórico de commits, estando situados en la carpeta de nuestro proyecto, es: 
+ 
+git log
+ 
+El listado de commits está invertido, es decir, los últimos realizados aparecen los primeros. 
+De un commit podemos ver diversas informaciones básicas como: 
+* Identificador del commit 
+* Autor 
+* Fecha de realización 
+* Mensaje enviado 
+
+Log en una línea por commit 
+Es muy útil lanzar el log en una sola línea, lo que permite que veamos más cantidad de commits en la pantalla y facilita mucho seguir la secuencia, en vez de tener que ver un montón de páginas de commits. 
+Para ello usamos el mismo comando, pero con la opción "--oneline": 
+git log --oneline 
+  
+
+Ver un número limitado de commits 
+Si tu proyecto ya tiene muchos commits, decenas o cientos de ellos, quizás no quieras mostrarlos todos, ya que generalmente no querrás ver cosas tan antiguas como el origen del repositorio. Para ver un número de logs determinado introducimos ese número como opción, con el signo "-" delante (-1, -8, -12...). 
+Por ejemplo, esto muestra los últimos tres commits: 
+git log -3 
+Comando git diff
+git diff se usa para hacer una lista de conflictos. Para poder ver conflictos con respecto al archivo base, usa:
+git diff --base <file-name>
+El siguiente comando se usa para ver los conflictos que hay entre ramas antes de fusionarlas:
+git diff <source-branch> <target-branch>
+Para ver una lista de todos los conflictos presentes usa:
+git diff
+
+Git Fork
+Un fork significa bifurcación, y en programación supone copiar un proyecto y partir de este,  hacerle modificaciones. Cuando trabajamos con repositorios Git, supone hacer una copia exacta del proyecto, generando dos URL distintas.
+Justo después de hacer el fork, estos dos repositorios tienen exactamente la misma historia, son una copia idéntica. Finalizado el proceso, tendremos dos repositorios independientes que pueden cada uno evolucionar de forma totalmente autónoma. De hecho, los cambios que se hacen el repositorio original NO se transmiten automáticamente a la copia (fork). Esto tampoco ocurre a la inversa: las modificaciones que se hagan en la copia (fork) NO se transmiten automáticamente al repositorio original.
