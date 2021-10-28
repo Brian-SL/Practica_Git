@@ -1,4 +1,4 @@
-Brian Eduardo Segura Lozano
+Brian Eduardo Segura Lozano.
 
 Comando git log
 El comando que podemos usar para ver el histórico de commits, estando situados en la carpeta de nuestro proyecto, es: 
